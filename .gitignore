@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.env
+
+# Data
+data/
+archive/
+
+# Models (GitHub limit is 100MB, these are 600MB+)
+models/
+*.pkl
+
+# OS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Jupyter
+.ipynb_checkpoints
