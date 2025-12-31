@@ -28,7 +28,15 @@ class SignClassifier:
             
         elif self.model_type == 'rf':
             # Random Forest
-            return RandomForestClassifier(n_estimators=100, random_state=42)
+            return RandomForestClassifier(
+                n_estimators=300,
+                max_depth=None,
+                min_samples_leaf=1,
+                max_features='sqrt',
+                random_state=42,
+                n_jobs=-1
+            )
+
             
         else:
             raise ValueError(f"Bilinmeyen model tipi: {self.model_type}")

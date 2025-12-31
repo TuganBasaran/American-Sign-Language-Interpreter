@@ -51,7 +51,7 @@ def main():
     print(f"Öznitelik vektörü boyutu: {X.shape}. Süre: {time.time()-t0:.2f}sn")
 
     # 3. Eğitim/Test Ayrımı
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.15, random_state=42)
     print(f"Eğitim seti: {len(X_train)}, Test seti: {len(X_test)}")
 
     MODEL_PATH = "models/asl_rf_model.pkl"
