@@ -4,6 +4,7 @@ matplotlib
 scikit-learn
 scikit-image
 joblib
+mediapipe==0.10.9
 pandas
 ipykernel
 jupyter
